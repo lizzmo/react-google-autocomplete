@@ -36,11 +36,17 @@ export default class ReactGoogleAutocomplete extends React.Component {
           <input
             ref="input"
             {...rest}
+            { console.log(...rest) }
           />
           <span className='FormText-label' data-ref={ dataRef && `${dataRef}-label` }>
             { label }
           </span>
         </label>
+        { !!errorMessage &&
+          <div className='FormText-errorMessage'>
+            { errorMessage }
+          </div>
+        }
       </div>
     );
   }
