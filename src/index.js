@@ -31,11 +31,16 @@ export default class ReactGoogleAutocomplete extends React.Component {
     const {onPlaceSelected, types, ...rest} = this.props;
 
     return (
-      <div>
-        <input
-          ref="input"
-          {...rest}
-        />
+      <div className='FormText'>
+        <label>
+          <input
+            ref="input"
+            {...rest}
+          />
+          <span className='FormText-label' data-ref={ dataRef && `${dataRef}-label` }>
+            { label }
+          </span>
+        </label>
       </div>
     );
   }
