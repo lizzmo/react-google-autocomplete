@@ -1,6 +1,6 @@
 {
   "name": "aesop-react-google-autocomplete",
-  "version": "1.0.7",
+  "version": "1",
   "description": "React component for google autocomplete.",
   "main": "index.js",
   "scripts": {
